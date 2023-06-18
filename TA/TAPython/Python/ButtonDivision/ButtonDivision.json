@@ -1,0 +1,22 @@
+{
+	"TabLabel": "Dynamic Widget Demo",
+	"InitTabSize": [500, 320],
+	"InitTabPosition": [200, 150],
+    "InitPyCmd": "import ButtonDivision, importlib; importlib.reload(ButtonDivision); chameleon_button_division = ButtonDivision.ButtonDivision.ButtonDivisionExample(%JsonPath)",
+    "Root": {
+        "SHorizontalBox": { 
+            "Aka": "c_0", 
+            "Slots": [
+                {
+                    "SButton": { 
+                        "Aka":  "b_0_A", 
+                        "Text": "Splinter Button", 
+                        "VAlign": "Center", 
+                        "HAlign": "Center",
+                        "OnClick": "chameleon_button_division.on_button_click('b_0_A')"
+                    }
+                }
+            ]
+        }
+    }
+}
