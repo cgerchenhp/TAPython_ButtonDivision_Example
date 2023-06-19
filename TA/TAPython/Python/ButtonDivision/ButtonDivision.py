@@ -74,8 +74,8 @@ class ButtonDivisionExample(metaclass=Singleton):
         print(f"On_button_click: {button_aka}")
         button_path = self.data.get_widget_path_from_aka(button_aka)
         parent_aka, parent_path = self.get_parent_aka(button_aka)
-        print(f"{button_path=}")
-        print(f"{parent_aka=}, {parent_path=}")
+        print(f"button_path: {button_path}")
+        print(f"parent_aka: {parent_aka}, parent_path: {parent_path}")
         slot_id = button_path[button_path.rfind("/Slots_") + len("/Slots_"):button_path.rfind("/SButton"):]
         assert slot_id
         slot_id = int(slot_id)
