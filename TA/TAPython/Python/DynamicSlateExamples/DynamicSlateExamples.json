@@ -1,0 +1,150 @@
+{
+	"TabLabel": "Widget APIs Example",
+	"InitTabSize": [600, 350],
+	"InitTabPosition": [200, 100],
+    "InitPyCmd": "import DynamicSlateExamples, importlib; importlib.reload(DynamicSlateExamples); chameleon_dynamic_slate_example = DynamicSlateExamples.DynamicSlateExamples.DynamicSlateExamples(%JsonPath)",
+    "Root": {
+        "SVerticalBox":
+        {
+            
+            "Slots": [
+                {
+                    "AutoHeight": true,
+                    "SHeader":
+                    {
+                        "Content":
+                        {
+                            "STextBlock": { "Text": "New APIs", "Justification": "Center"}
+                        }
+                    }
+                },
+                {
+                    "AutoHeight": true,
+                    "SHorizontalBox": 
+                    {
+                        "Slots": [
+                            {
+                                "AutoWidth": true,
+                                "SButton":
+                                {
+                                    "Text": "Set Content To Widget",
+                                    "HAlign": "Center",
+                                    "VAlign": "Center",
+                                    "ContentPadding": 4,
+                                    "OnClick": "chameleon_dynamic_slate_example.on_button_set_content_click()"
+                                }
+                            },
+                            {
+                                "AutoWidth": true,
+                                "SButton": {
+                                    "Text": "Remove",
+                                    "ContentPadding": 4,
+                                    "ToolTipText": "Remove",
+                                    "OnClick": "chameleon_dynamic_slate_example.on_button_remove_click()"
+                                }
+                            },
+                            {
+                                "HAlign": "Right",
+                                "SButton":
+                                {
+                                    "Text": "Log Akas",
+                                    "ContentPadding": 4,
+                                    "ToolTipText": "Log Akas",
+                                    "OnClick": "chameleon_dynamic_slate_example.on_button_log_akas()"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "AutoHeight": true,
+                    "SHorizontalBox":
+                    {
+                        "Slots": [
+                            {
+                                "AutoWidth": true,
+                                "SButton":
+                                {
+                                    "Text": "Append To Slot",
+                                    "ContentPadding": 4,
+                                    "OnClick": "chameleon_dynamic_slate_example.on_button_append_click()"
+                                }
+                            },
+                            {
+                                "AutoWidth": true,
+                                "SButton":
+                                {
+                                    "Text": "Insert To Slot",
+                                    "ContentPadding": 4,
+                                    "OnClick": "chameleon_dynamic_slate_example.on_button_insert_click()"
+                                }
+                            },
+                            {
+                                "AutoWidth": true,
+                                "SSpinBox":
+                                {
+                                    "Aka": "index_input",
+                                    "Type": "int",
+                                    "Value": 1,
+                                    "MinValue": 0,
+                                    "MaxValue": 20,
+                                    "MinSliderValue": 0,
+                                    "maxSliderValue": 20,
+                                    "Delta": 1
+                                }
+                            },
+                            {
+                                "AutoWidth": true,
+                                "SButton": {
+                                    "Text": "Remove",
+                                    "ContentPadding": 4,
+                                    "ToolTipText": "Remove",
+                                    "OnClick": "chameleon_dynamic_slate_example.on_button_remove_first_click()"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "AutoHeight": true,
+                    "SHeader":
+                    {
+                        "Content":
+                        {
+                            "STextBlock": { "Text": "Parent Widgets", "Justification": "Center"}
+                        }
+                    }
+                },
+                {
+                    "AutoHeight": true,
+                    "STextBlock": { "Text": "A Named SBorder"}
+                },
+                {
+                    "AutoHeight": true,
+                    "SBorder": {
+                        "Aka": "a_named_sborder",
+                        "BorderImage": {
+                            "Style": "FEditorStyle",
+                            "Brush": "ToolPanel.DarkGroupBorder"
+                        },
+                        "Content":{
+
+                        }
+                    }
+                },
+                {
+                    "AutoHeight": true,
+                    "STextBlock": { "Text": "A Named SHorizontalBox"}
+                },
+                {
+                    "SVerticalBox":
+                    {
+                        "Aka": "a_named_sverticalbox"
+                    }
+                }
+            ]
+        }
+    }
+}
+
+

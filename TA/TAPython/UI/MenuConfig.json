@@ -170,7 +170,17 @@
             },
             {
                 "name": "Button Division",
-                "ChameleonTools": "../Python/ButtonDivision/ButtonDivision.json"
+                "ChameleonTools": "../Python/ButtonDivision/ButtonDivision.json",
+                "icon": {
+                    "ImagePathInPlugin": "Resources/briefcase_32x.png"
+                }
+            },
+            {
+                "name": "Dynamic Slate Examples",
+                "ChameleonTools": "../Python/DynamicSlateExamples/DynamicSlateExamples.json",
+                "icon": {
+                    "ImagePathInPlugin": "Resources/briefcase_32x.png"
+                }
             }
         ]
     },
